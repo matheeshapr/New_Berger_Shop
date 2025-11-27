@@ -1,6 +1,5 @@
 package edu.icet.model.dto;
 
-import jakarta.persistence.Id;
 import lombok.*;
 
 @Setter

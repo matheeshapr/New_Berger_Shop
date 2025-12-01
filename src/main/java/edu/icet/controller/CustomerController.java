@@ -3,10 +3,7 @@ package edu.icet.controller;
 import edu.icet.model.entity.Customer;
 import edu.icet.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("customers")
@@ -19,5 +16,4 @@ public class CustomerController {
     public void addCustomer(@RequestBody Customer customer) {
         customerService.add(customer);
     }
-
 }

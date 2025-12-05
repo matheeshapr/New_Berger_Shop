@@ -18,7 +18,8 @@ public class OrderDetailsController {
     @PostMapping("adddetails")
     public void addDetails(@RequestBody OrderDetails orderDetails){
         orderDetailsService.add(orderDetails);
-
     }
+
+
 
 }

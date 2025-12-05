@@ -16,4 +16,9 @@ public class CustomerController {
     public void addCustomer(@RequestBody Customer customer) {
         customerService.add(customer);
     }
+
+    @GetMapping("getcustomer")
+    public void getAll(){
+
+    }
 }

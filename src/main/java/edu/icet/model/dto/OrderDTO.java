@@ -6,10 +6,8 @@ import jakarta.persistence.Table;
 import lombok.*;
 
 import java.util.Date;
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
+
+@Data
 public class OrderDTO {
     private int id;
     private String custid;

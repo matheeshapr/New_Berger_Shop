@@ -2,11 +2,7 @@ package edu.icet.model.dto;
 
 import lombok.*;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString
+@Data
 public class ItemDTO {
 
     private int code;

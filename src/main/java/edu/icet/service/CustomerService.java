@@ -5,6 +5,9 @@ import edu.icet.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
 public class CustomerService {
 
@@ -14,4 +17,19 @@ public class CustomerService {
     public void add(Customer customer) {
         customerRepository.save(customer);
     }
+
+    public List<Customer> getAllCustomer() {
+        return customerRepository.findAll();
+    }
+
+//    public List<Customer> searchByName(String name) {
+//       // return customerRepository.findByName(name);
+//    }
+
+
+//    public Customer <Customer> searchStudent(Integer id) {
+//        return customerRepository.findById(id);
+//    }
 }
+
+

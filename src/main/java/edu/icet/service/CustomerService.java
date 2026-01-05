@@ -27,9 +27,6 @@ public class CustomerService {
         return Collections.singletonList(customerRepository.findByName(name));
     }
 
-//    public List<Customer> searchByName(String name) {
-//       // return customerRepository.findByName(name);
-//    }
 
 
 //    public Customer <Customer> searchStudent(Integer id) {

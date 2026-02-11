@@ -28,6 +28,11 @@ public class CustomerService {
     }
 
 
+    public Customer searchStudent(Integer id) {
+        Optional<Customer> customer = customerRepository.findById(id);
+        return customer.orElse(null);
+    }
+
 }
 
 
